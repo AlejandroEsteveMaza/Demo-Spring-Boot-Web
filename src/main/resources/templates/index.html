@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8"/>
-<title>Demo Spring boot</title>
+<title th:text="${titulo}">Demo Spring boot</title>
 </head>
 <body>
-<h1>Template heading</h1>
+<h1 th:text="${titulo}">Template heading</h1>
 </body>
 </html>
