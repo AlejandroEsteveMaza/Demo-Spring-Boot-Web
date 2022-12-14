@@ -19,9 +19,7 @@ public class EjemploParamsController {
 	}
 
 	@GetMapping("/string")
-	public String param(
-			@RequestParam(name = "texto", defaultValue = "Texto default", required = false) String urlVariable,
-			Model model) {
+	public String param(@RequestParam(name = "texto", defaultValue = "Texto default", required = false) String urlVariable, Model model) {
 		model.addAttribute("resultado", "El texto enviado es: " + urlVariable);
 		return "params/ver";
 	}
@@ -31,7 +29,7 @@ public class EjemploParamsController {
 		model.addAttribute("resultado", "El saludo enviado es: '" + saludo + "' y el número es: " + numero);
 		return "params/ver";
 	}
-	
+
 	@GetMapping("/mix-params-request")
 	public String param(HttpServletRequest request, Model model) {
 		String saludo = request.getParameter("saludo");
