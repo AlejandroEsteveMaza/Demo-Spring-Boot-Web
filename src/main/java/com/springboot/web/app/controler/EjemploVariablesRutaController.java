@@ -31,5 +31,4 @@ public class EjemploVariablesRutaController {
 				+ "y el numero enviado es: " + numero);
 		return "variables/ver";
 	}
-	
 }
