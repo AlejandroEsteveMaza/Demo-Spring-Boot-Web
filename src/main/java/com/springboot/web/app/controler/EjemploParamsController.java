@@ -42,5 +42,4 @@ public class EjemploParamsController {
 		model.addAttribute("resultado", "El saludo enviado es: '" + saludo + "' y el número es: " + numero);
 		return "params/ver";
 	}
-
 }
